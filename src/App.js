@@ -4,9 +4,10 @@ import './App.css';
 import Saludo from './components/Saludo'; // No requiere Saludo extension por que babel lo hace solo
 
 function App(){
+    const age = 50; // declaro age
     return(
         <div className='App'>
-            <Saludo />
+            {age > 10 ? <Saludo/> : "" } 
         </div>
     )
 }
