@@ -1,13 +1,18 @@
 import './App.css';
 
 // Importar el componente
-import Saludo from './components/Saludo'; // No requiere Saludo extension por que babel lo hace solo
+import Gretting from "./components/Gretting"; // No requiere el componente extension por que babel lo hace solo
+import Users from "./components/Users";
+import Counter from "./components/Counter";
+import Button from "./components/Button";
+import USERS_DATA from "./data/users.json"; 
 
-function App(){
-    const age = 50; // declaro age
+function App(){ // Aca utilizo los componentes que quiero renderizar.
     return(
-        <div className='App'>
-            {age > 10 ? <Saludo/> : "" } 
+        <div className="App">
+            <Gretting text={"Trabajando con React"}/> 
+            <Counter subject="React" developerName="Jane" />
+            <Users usersList={USERS_DATA}/>
         </div>
     )
 }
