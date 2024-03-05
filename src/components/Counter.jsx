@@ -4,7 +4,7 @@ class Counter extends Component {
     constructor(props){
         super(props); // Permite que la app funcione, ya que es constructor del componente padre
         this.state = { 
-            initialValue: 10,
+            initialValue: 0,
             developer: this.props.developerName,
 
         }
@@ -20,6 +20,30 @@ class Counter extends Component {
         console.log("%c Se desmontó el componente ", "background: blue");
     }
 
+    // Handler
+    increment(){
+        const actualValue = this.state.initialValue
+        if (actualValue == 15){
+            console.log("Llegamos a 15");
+            console.log("Dejamos de sumar");
+            return; // frena el ciclo al llegar a 15 y muestra por consola los msj
+        }
+        this.setState({ initialValue: actualValue + 1 })
+    }
+
+    decrement(){
+        const actualValue = this.state.initialValue
+        if (actualValue == 0){
+            console.log("No puedes setear el valor en menos de cero");
+            return; // frena el ciclo de decremento al llegar a 0
+        }
+        this.setState({ initialValue: actualValue - 1 })
+    }
+
+    changeDeveloperName(name){
+        this.setState({ developer: name })
+    } // cambia el nombre del developer
+
     render() {
         const {initialValue,developer} = this.state;
         const {subject} = this.props;
@@ -28,6 +52,10 @@ class Counter extends Component {
                 <hr />
                 <h2>Contador</h2>
                 <p>El valor del contador es: <strong>{ initialValue }</strong></p>
+                <button onClick={() => this.increment()}>Incrementar</button>
+                <button onClick={() => this.decrement()}>Decrementar</button>
+                <button onClick={() => this.changeDeveloperName("Peter")}>Cmbiar el nombre del Developer</button>
+                <hr />
                 <em>El developer es: {developer} y le encanta programar en: <strong>{subject}</strong></em>
                 <hr />
             </>
