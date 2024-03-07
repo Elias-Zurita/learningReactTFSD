@@ -2,7 +2,8 @@ import './App.css';
 
 // Importar el componente
 import Gretting from "./components/Gretting"; // No requiere el componente extension por que babel lo hace solo
-import UsersClassComponent from "./components/UsersClassComponent";
+import UsersHook from "./components/UsersHook";
+//import UsersClassComponent from "./components/UsersClassComponent";
 //import Users from "./components/Users";
 //import Counter from "./components/Counter";
 //import Button from "./components/Button";
@@ -12,7 +13,7 @@ function App(){ // Aca utilizo los componentes que quiero renderizar.
     return(
         <div className="App">
             <Gretting text={"Trabajando con React"}/> 
-            <UsersClassComponent/>
+            <UsersHook />
             {/* <Counter subject="React" developerName="Jane" />
             <Users usersList={USERS_DATA}/> */}
         </div>

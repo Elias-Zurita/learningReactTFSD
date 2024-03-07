@@ -1,61 +1,61 @@
 [{
         "id": 1,
-        "firstName": "John",
-        "lastName": "Dawber",
+        "first_name": "John",
+        "last_name": "Dawber",
         "email": "john@gmail.com"
     },
     {
         "id": 2,
-        "firstName": "Ana",
-        "lastName": "Manson",
+        "first_name": "Ana",
+        "last_name": "Manson",
         "email": "ana@gmail.com"
     },
     {
         "id": 3,
-        "firstName": "Billi",
-        "lastName": "Darrel",
+        "first_name": "Billi",
+        "last_name": "Darrel",
         "email": "billi@gmail.com"
     },
     {
         "id": 4,
-        "firstName": "Elliot",
-        "lastName": "Zurita",
+        "first_name": "Elliot",
+        "last_name": "Zurita",
         "email": "elliot@gmail.com"
     },
     {
         "id": 5,
-        "firstName": "James",
-        "lastName": "Rodriguez",
+        "first_name": "James",
+        "last_name": "Rodriguez",
         "email": "james@gmail.com"
     },
     {
         "id": 6,
-        "firstName": "Dave",
-        "lastName": "Mustaine",
+        "first_name": "Dave",
+        "last_name": "Mustaine",
         "email": "dave@gmail.com"
     },
     {
         "id": 7,
-        "firstName": "Brian",
-        "lastName": "O'Conner",
+        "first_name": "Brian",
+        "last_name": "O'Conner",
         "email": "brian@gmail.com"
     },
     {
         "id": 8,
-        "firstName": "Kevin",
-        "lastName": "De Bruyne",
+        "first_name": "Kevin",
+        "last_name": "De Bruyne",
         "email": "kevin@gmail.com"
     },
     {
         "id": 9,
-        "firstName": "Caroline",
-        "lastName": "Wozsniacki",
+        "first_name": "Caroline",
+        "last_name": "Wozsniacki",
         "email": "caroline@gmail.com"
     },
     {
         "id": 10,
-        "firstName": "Eva",
-        "lastName": "De Dominici",
+        "first_name": "Eva",
+        "last_name": "De Dominici",
         "email": "eva@gmail.com"
     }
 ]

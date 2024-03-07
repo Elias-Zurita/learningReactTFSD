@@ -22,7 +22,7 @@ Users.propTypes = {
             id: PropTypes.number,
             firstName: PropTypes.string,
             lastName: PropTypes.string,
-            email: PropTypes.string
+            email: PropTypes.string,
         })
     )
 }
