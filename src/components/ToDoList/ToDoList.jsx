@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { ToDoContext } from "./TodoContext";
 import Button from "../Button";
+import ToDoListStyles from "./ToDoList.module.css"
 
 const ToDoList = () => {
     const {todoListState} = useContext(ToDoContext)
     return (
-        <>
+        <div className={ToDoListStyles.outlineBox}>
             <h4>Listado de Tareas</h4>
             <ol>
                 {todoListState.map((todo) => {
@@ -13,7 +14,7 @@ const ToDoList = () => {
                 })}
             </ol>
             <Button text="Borrar tareas" />
-        </>
+        </div>
     )
 }
 
